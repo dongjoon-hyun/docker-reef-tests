@@ -26,24 +26,24 @@ ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
 ENV PATH $PATH:$JAVA_HOME/bin
 RUN echo 'JAVA_HOME="/usr/lib/jvm/java-7-oracle"' >> /etc/environment
 
-# HDP 2.2.7
+# HDP 2.2.8
 RUN \
-  wget http://public-repo-1.hortonworks.com/HDP/ubuntu12/2.x/updates/2.2.7.1/hdp.list -O /etc/apt/sources.list.d/hdp.list && \
+  wget http://public-repo-1.hortonworks.com/HDP/ubuntu12/2.x/updates/2.2.8.0/hdp.list -O /etc/apt/sources.list.d/hdp.list && \
   gpg --keyserver pgp.mit.edu --recv-keys B9733A7A07513CAD && \
   gpg -a --export 07513CAD | apt-key add - && \
   apt-get update
-RUN apt-get install -y hadoop-2-2-7-1-33*
-ENV HADOOP_PREFIX /usr/hdp/2.2.7.1-33/hadoop
+RUN apt-get install -y hadoop-2-2-8-0-3150*
+ENV HADOOP_PREFIX /usr/hdp/2.2.8.0-3150/hadoop
 
 ENV YARN_CONF_DIR $HADOOP_PREFIX/etc/hadoop
 RUN \
-  echo 'HADOOP_PREFIX="/usr/hdp/2.2.7.1-33/hadoop"' >> /etc/environment && \
-  echo 'HADOOP_COMMON_HOME="/usr/hdp/2.2.7.1-33/hadoop"' >> /etc/environment && \
-  echo 'HADOOP_HDFS_HOME="/usr/hdp/2.2.7.1-33/hadoop"' >> /etc/environment && \
-  echo 'HADOOP_MAPRED_HOME="/usr/hdp/2.2.7.1-33/hadoop"' >> /etc/environment && \
-  echo 'HADOOP_YARN_HOME="/usr/hdp/2.2.7.1-33/hadoop-yarn"' >> /etc/environment && \
-  echo 'HADOOP_CONF_DIR="/usr/hdp/2.2.7.1-33/hadoop/etc/hadoop"' >> /etc/environment && \
-  echo 'YARN_CONF_DIR="/usr/hdp/2.2.7.1-33/hadoop/etc/hadoop"' >> /etc/environment
+  echo 'HADOOP_PREFIX="/usr/hdp/2.2.8.0-3150/hadoop"' >> /etc/environment && \
+  echo 'HADOOP_COMMON_HOME="/usr/hdp/2.2.8.0-3150/hadoop"' >> /etc/environment && \
+  echo 'HADOOP_HDFS_HOME="/usr/hdp/2.2.8.0-3150/hadoop"' >> /etc/environment && \
+  echo 'HADOOP_MAPRED_HOME="/usr/hdp/2.2.8.0-3150/hadoop"' >> /etc/environment && \
+  echo 'HADOOP_YARN_HOME="/usr/hdp/2.2.8.0-3150/hadoop-yarn"' >> /etc/environment && \
+  echo 'HADOOP_CONF_DIR="/usr/hdp/2.2.8.0-3150/hadoop/etc/hadoop"' >> /etc/environment && \
+  echo 'YARN_CONF_DIR="/usr/hdp/2.2.8.0-3150/hadoop/etc/hadoop"' >> /etc/environment
 ENV PATH $PATH:$HADOOP_PREFIX/sbin:$HADOOP_PREFIX-yarn/sbin:$HADOOP_PREFIX-hdfs/bin:$HADOOP_PREFIX-hdfs/sbin:$HADOOP_PREFIX-yarn/bin:$HADOOP_PREFIX-yarn/sbin
 
 COPY core-site.xml $HADOOP_PREFIX/etc/hadoop/

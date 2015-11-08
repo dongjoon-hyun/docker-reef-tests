@@ -49,9 +49,6 @@ RUN \
   echo 'YARN_CONF_DIR="/usr/lib/hadoop/etc/hadoop"' >> /etc/environment
 ENV PATH $PATH:/usr/lib/hadoop/bin:/usr/lib/hadoop/sbin:/usr/lib/hadoop-hdfs/bin:/usr/lib/hadoop-hdfs/sbin:/usr/lib/hadoop-yarn/bin:/usr/lib/hadoop-yarn/sbin
 
-#RUN sed -i '/^export JAVA_HOME/ s:.*:export JAVA_HOME=$JAVA_HOME\nexport HADOOP_PREFIX=/usr/local/hadoop\nexport HADOOP_HOME=/usr/local/hadoop\n:' $HADOOP_PREFIX/etc/hadoop/hadoop-env.sh
-#RUN sed -i '/^export HADOOP_CONF_DIR/ s:.*:export HADOOP_CONF_DIR=/usr/local/hadoop/etc/hadoop/:' $HADOOP_PREFIX/etc/hadoop/hadoop-env.sh
-
 COPY core-site.xml $HADOOP_PREFIX/etc/hadoop/
 COPY hdfs-site.xml $HADOOP_PREFIX/etc/hadoop/
 COPY mapred-site.xml $HADOOP_PREFIX/etc/hadoop/

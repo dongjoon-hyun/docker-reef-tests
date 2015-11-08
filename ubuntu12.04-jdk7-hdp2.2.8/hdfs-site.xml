@@ -3,7 +3,7 @@
 
 <configuration>
     <property>
-        <name>mapreduce.framework.name</name>
-        <value>yarn</value>
+        <name>dfs.replication</name>
+        <value>1</value>
     </property>
 </configuration>

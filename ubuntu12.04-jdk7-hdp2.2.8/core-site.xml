@@ -3,7 +3,7 @@
 
 <configuration>
     <property>
-        <name>mapreduce.framework.name</name>
-        <value>yarn</value>
+        <name>fs.defaultFS</name>
+        <value>hdfs://hnn-001-01:9000</value>
     </property>
 </configuration>
