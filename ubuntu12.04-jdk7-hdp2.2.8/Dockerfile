@@ -44,7 +44,7 @@ RUN \
   echo 'HADOOP_YARN_HOME="/usr/hdp/2.2.8.0-3150/hadoop-yarn"' >> /etc/environment && \
   echo 'HADOOP_CONF_DIR="/usr/hdp/2.2.8.0-3150/hadoop/etc/hadoop"' >> /etc/environment && \
   echo 'YARN_CONF_DIR="/usr/hdp/2.2.8.0-3150/hadoop/etc/hadoop"' >> /etc/environment
-ENV PATH $PATH:$HADOOP_PREFIX/sbin:$HADOOP_PREFIX-yarn/sbin:$HADOOP_PREFIX-hdfs/bin:$HADOOP_PREFIX-hdfs/sbin:$HADOOP_PREFIX-yarn/bin:$HADOOP_PREFIX-yarn/sbin
+ENV PATH $PATH:$HADOOP_PREFIX/bin:$HADOOP_PREFIX/sbin:$HADOOP_PREFIX-yarn/bin:$HADOOP_PREFIX-yarn/sbin:$HADOOP_PREFIX-hdfs/bin:$HADOOP_PREFIX-hdfs/sbin
 
 COPY core-site.xml $HADOOP_PREFIX/etc/hadoop/
 COPY hdfs-site.xml $HADOOP_PREFIX/etc/hadoop/
