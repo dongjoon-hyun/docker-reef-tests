@@ -1,9 +1,9 @@
-Apache REEF (incubator) Docker Tests for HDInsight 3.1
+Apache REEF (incubator) Docker Tests for HDInsight 3.2
 ======================================================
 
 This project aims to provide a docker image and related scripts to simulate 
 [Apache REEF (incubator)](http://reef.incubator.apache.org/) testing on 
-HDInsight 3.1 linux cluster<sup>[1](#note1)</sup> as possible as it can. 
+HDInsight 3.2 linux cluster<sup>[1](#note1)</sup> as possible as it can. 
 
 Components
 ----------
@@ -13,7 +13,7 @@ Documentation<sup>[2](#note2)</sup> and release notes<sup>[3](#note3)</sup>.
 
 * Ubuntu 12.04.5 LTS
 * Oracle JDK 1.7.0_80
-* HDP 2.1.15 (Hadoop 2.4.0)
+* HDP 2.2.7 (Hadoop 2.6.0)
 
 Requirements
 ------------
@@ -26,7 +26,7 @@ Run
 ---
 You can run tests on a docker cluster easily.
 
-> $ run-cluster.sh hdi3.1
+> $ run-cluster.sh hdi3.2
 
 > ...
 

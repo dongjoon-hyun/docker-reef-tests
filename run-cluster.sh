@@ -1,4 +1,8 @@
-IMAGE=ubuntu12.04-jdk7-hdp2.1.15
+#!/usr/bin/env bash
+
+IMAGE=${1:-hdi3.2}
+echo "Using $IMAGE"
+
 LINK=""
 for i in {1..3}
 do
