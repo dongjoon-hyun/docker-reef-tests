@@ -3,13 +3,13 @@ Apache REEF (incubator) Docker Tests for HDInsight 3.1
 
 This project aims to provide a docker image and related scripts to simulate 
 [Apache REEF (incubator)](http://reef.incubator.apache.org/) testing on 
-HDInsight 3.1 linux cluster[^linux_ga] as possible as it can. 
+HDInsight 3.1 linux cluster<sup>[1](#note1)</sup> as possible as it can. 
 
 Components
 ----------
 
 The components of this docker images are based on HDInsight 
-Documentation[^hdi_doc] and release notes[^hdi_release_note].
+Documentation<sup>[2](#note2)</sup> and release notes<sup>[3](#note3)</sup>.
 
 * Ubuntu 12.04.5 LTS
 * Oracle JDK 1.7.0_80
@@ -38,7 +38,7 @@ You can run tests on a docker cluster easily.
 
 Reference
 ---------
-[^linux_ga]: https://azure.microsoft.com/en-us/updates/general-availability-apache-hadoop-on-linux-in-hdinsight/
-[^hdi_doc]: https://azure.microsoft.com/en-us/documentation/articles/hdinsight-component-versioning/
-[^hdi_release_note]: https://azure.microsoft.com/en-us/updates/general-availability-apache-hadoop-on-linux-in-hdinsight/
+<a name="note1">1</a>: https://azure.microsoft.com/en-us/updates/general-availability-apache-hadoop-on-linux-in-hdinsight/
+<a name="note2">2</a>: https://azure.microsoft.com/en-us/documentation/articles/hdinsight-component-versioning/
+<a name="note3">3</a>: https://azure.microsoft.com/en-us/updates/general-availability-apache-hadoop-on-linux-in-hdinsight/
 
