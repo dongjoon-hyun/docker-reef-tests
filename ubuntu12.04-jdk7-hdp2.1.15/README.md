@@ -38,7 +38,7 @@ You can run tests on a docker cluster easily.
 
 Reference
 ---------
-<a name="note1">1</a>: https://azure.microsoft.com/en-us/updates/general-availability-apache-hadoop-on-linux-in-hdinsight/
-<a name="note2">2</a>: https://azure.microsoft.com/en-us/documentation/articles/hdinsight-component-versioning/
-<a name="note3">3</a>: https://azure.microsoft.com/en-us/updates/general-availability-apache-hadoop-on-linux-in-hdinsight/
+* <a name="note1">1</a>: https://azure.microsoft.com/en-us/updates/general-availability-apache-hadoop-on-linux-in-hdinsight/
+* <a name="note2">2</a>: https://azure.microsoft.com/en-us/documentation/articles/hdinsight-component-versioning/
+* <a name="note3">3</a>: https://azure.microsoft.com/en-us/updates/general-availability-apache-hadoop-on-linux-in-hdinsight/
 
