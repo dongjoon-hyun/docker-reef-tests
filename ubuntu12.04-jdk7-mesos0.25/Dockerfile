@@ -11,7 +11,7 @@ RUN \
   apt-get install -y mesos && \
   rm -rf /var/lib/apt/lists/*
 ENV HADOOP_HOME=$HADOOP_PREFIX
-
+RUN echo 'PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/hadoop/bin"' >> /etc/environment
 COPY init-nn.sh /root/
 
 EXPOSE 22 5050

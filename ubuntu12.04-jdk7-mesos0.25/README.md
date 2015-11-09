@@ -31,5 +31,5 @@ You can run tests on a docker cluster easily.
 
 > $ root@hnn-001-01:~# cd /reef
 
-> $ root@hnn-001-01:~# ./bin/runmesostests.sh hnn-001-01
+> $ root@hnn-001-01:~# ./bin/runmesostests.sh hnn-001-01:5050
 
