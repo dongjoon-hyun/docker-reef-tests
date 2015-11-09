@@ -1,4 +1,4 @@
-FROM apache
+FROM apache2.7.1
 MAINTAINER Dongjoon Hyun <dongjoon@apache.org>
 
 RUN ln -s /usr/lib/jvm/java-7-oracle/jre/lib/amd64/server/libjvm.so /usr/bin/libjvm.so
