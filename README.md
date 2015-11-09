@@ -19,9 +19,16 @@ Docker-based Test Cluster
 | Ubuntu 12.04 | Oracle JDK 7u80 | Apache Mesos 0.25.0       |               | mesos0.25 |
 
 Build and Run
------
+-------------
 
 ```sh
 build.sh
 run-cluster hdi3.2
 ```
+
+Reference
+---------
+* https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/DockerContainerExecutor.html
+* https://github.com/sequenceiq/hadoop-docker
+* https://mesos.apache.org/gettingstarted
+* https://mesosphere.com/downloads
