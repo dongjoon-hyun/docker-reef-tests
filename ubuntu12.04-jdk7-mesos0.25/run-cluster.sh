@@ -2,17 +2,13 @@
 
 IMAGE=${1:-hdi3.2}
 echo "Using $IMAGE"
-if [[ $IMAGE == *"mesos"* ]]
-then
-   PRIVILEGED='--privileged=true'
-fi
 
 LINK=""
 for i in {1..3}
 do
     HOST=hdn-001-0$i
     LINK="$LINK --link=$HOST:$HOST"
-    docker run $PRIVILEGED --name=$HOST -h $HOST -p 1001$i:22 -d $IMAGE /root/start.sh
+    docker run --name=$HOST -h $HOST -p 1001$i:22 -d $IMAGE /root/start.sh
 done
 
 HOST=hnn-001-01
