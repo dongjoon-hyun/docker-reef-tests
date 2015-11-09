@@ -5,7 +5,7 @@
 /root/sync-hosts.sh
 
 grep hdn /etc/hosts | awk '{print $1}' | sort | uniq > $HADOOP_PREFIX/etc/hadoop/slaves
-for host in `grep 172 /etc/hosts | awk '{print $1}'`
+for host in `cat $HADOOP_PREFIX/etc/hadoop/slaves`
 do
     echo $host
     scp $HADOOP_PREFIX/etc/hadoop/slaves $host:$HADOOP_PREFIX/etc/hadoop/slaves

@@ -7,7 +7,7 @@
 hostname > /usr/etc/mesos/masters
 grep hdn /etc/hosts | awk '{print $1}' | sort | uniq > $HADOOP_PREFIX/etc/hadoop/slaves
 cp $HADOOP_PREFIX/etc/hadoop/slaves /usr/etc/mesos/slaves
-for host in `grep 172 /etc/hosts | awk '{print $1}'`
+for host in `cat $HADOOP_PREFIX/etc/hadoop/slaves`
 do
     echo $host
     scp $HADOOP_PREFIX/etc/hadoop/slaves $host:$HADOOP_PREFIX/etc/hadoop/slaves
