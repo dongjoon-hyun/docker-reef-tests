@@ -28,7 +28,9 @@ run-cluster hdi3.2
 
 Reference
 ---------
-* https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/DockerContainerExecutor.html
-* https://github.com/sequenceiq/hadoop-docker
-* https://mesos.apache.org/gettingstarted
-* https://mesosphere.com/downloads
+* Ubuntu OS: https://hub.docker.com/_/ubuntu/
+* Java: https://github.com/dockerfile/java/tree/master/oracle-java7
+* Hadoop: https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/DockerContainerExecutor.html
+* Hadoop: https://github.com/sequenceiq/hadoop-docker
+* Mesos: https://mesos.apache.org/gettingstarted
+* Prebuilt Mesos: https://mesosphere.com/downloads
