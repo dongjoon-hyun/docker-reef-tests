@@ -13,7 +13,7 @@ do
     scp $HADOOP_PREFIX/etc/hadoop/slaves $host:$HADOOP_PREFIX/etc/hadoop/slaves
     scp /usr/etc/mesos/masters $host:/usr/etc/mesos/masters
     scp /usr/etc/mesos/slaves $host:/usr/etc/mesos/slaves
-    ssh $host nohup mesos-daemon.sh mesos-slave --master=172.17.0.5:5050 --docker_mesos_image=ubuntu12.04-jdk7-mesos0.25
+    ssh $host nohup mesos-daemon.sh mesos-slave --master=hnn-001-01:5050 --docker_mesos_image=ubuntu12.04-jdk7-mesos0.25
 done
 
 /usr/local/hadoop/bin/hdfs namenode -format
