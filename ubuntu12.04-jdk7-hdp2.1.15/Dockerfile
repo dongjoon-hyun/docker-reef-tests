@@ -6,8 +6,9 @@ RUN \
   wget http://public-repo-1.hortonworks.com/HDP/ubuntu12/2.x/updates/2.1.15.0/hdp.list -O /etc/apt/sources.list.d/hdp.list && \
   gpg --keyserver pgp.mit.edu --recv-keys B9733A7A07513CAD && \
   gpg -a --export 07513CAD | apt-key add - && \
-  apt-get update
-RUN apt-get install -y hadoop hadoop-hdfs hadoop-yarn hadoop-mapreduce hadoop-client
+  apt-get update && \
+  apt-get install -y hadoop hadoop-hdfs hadoop-yarn hadoop-mapreduce hadoop-client && \
+  apt-get clean
 ENV CLASSPATH $CLASSPATH:/usr/lib/hadoop/client/*
 ENV HADOOP_PREFIX /usr/lib/hadoop
 ENV HADOOP_LIBEXEC_DIR /usr/lib/hadoop/libexec

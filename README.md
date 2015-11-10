@@ -23,7 +23,7 @@ Build and Run
 
 ```sh
 build.sh
-run-cluster hdi3.2
+run-cluster reefrt/hdi3.2
 ```
 
 Reference

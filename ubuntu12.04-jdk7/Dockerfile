@@ -1,17 +1,18 @@
 FROM ubuntu:12.04
 MAINTAINER Dongjoon Hyun <dongjoon@apache.org>
 
-RUN apt-get update && apt-get install -y openssh-server python-software-properties
+RUN \
+  apt-get update && \
+  apt-get install -y openssh-server python-software-properties && \
+  apt-get clean
 
-RUN mkdir /var/run/sshd
-RUN ssh-keygen -q -N "" -t rsa -f /root/.ssh/id_rsa
-RUN cp /root/.ssh/id_rsa.pub /root/.ssh/authorized_keys
-
-RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
-
-COPY config /root/.ssh/
+RUN \
+  mkdir /var/run/sshd && \
+  ssh-keygen -q -N "" -t rsa -f /root/.ssh/id_rsa && \
+  cp /root/.ssh/id_rsa.pub /root/.ssh/authorized_keys && \
+  sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd && \
+  echo 'StrictHostKeyChecking no' > /root/.ssh/config
 COPY start.sh /root/
-COPY sync-hosts.sh /root/
 
 # java
 RUN \
@@ -19,6 +20,7 @@ RUN \
   add-apt-repository -y ppa:webupd8team/java && \
   apt-get update && \
   apt-get install -y oracle-java7-installer && \
+  apt-get clean && \
   rm -rf /var/lib/apt/lists/* && \
   rm -rf /var/cache/oracle-jdk7-installer
 

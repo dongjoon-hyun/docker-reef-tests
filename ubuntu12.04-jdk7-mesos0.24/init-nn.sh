@@ -2,14 +2,12 @@
 
 /usr/sbin/sshd
 
-/root/sync-hosts.sh
-
 hostname > /usr/etc/mesos/masters
 grep hdn /etc/hosts | awk '{print $1}' | sort | uniq > $HADOOP_PREFIX/etc/hadoop/slaves
 cp $HADOOP_PREFIX/etc/hadoop/slaves /usr/etc/mesos/slaves
 for host in `cat $HADOOP_PREFIX/etc/hadoop/slaves`
 do
-    echo $host
+    scp /etc/hosts $host:/etc/hosts
     scp $HADOOP_PREFIX/etc/hadoop/slaves $host:$HADOOP_PREFIX/etc/hadoop/slaves
     scp /usr/etc/mesos/masters $host:/usr/etc/mesos/masters
     scp /usr/etc/mesos/slaves $host:/usr/etc/mesos/slaves
