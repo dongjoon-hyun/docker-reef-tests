@@ -27,7 +27,7 @@ Run
 ---
 You can run tests on a docker cluster easily.
 
-> $ run-cluster.sh hdp2.2
+> $ run-cluster.sh reefrt/hdp2.2
 
 > ...
 

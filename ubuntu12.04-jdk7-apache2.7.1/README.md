@@ -27,7 +27,7 @@ Run
 ---
 You can run tests on a docker cluster easily.
 
-> $ run-cluster.sh apache
+> $ run-cluster.sh reefrt/apache
 
 > ...
 

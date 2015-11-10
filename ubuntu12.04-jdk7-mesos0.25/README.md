@@ -23,7 +23,7 @@ Run
 ---
 You can run tests on a docker cluster easily.
 
-> $ run-cluster.sh mesos0.25
+> $ run-cluster.sh reefrt/mesos0.25
 
 > ...
 

@@ -26,7 +26,7 @@ Run
 ---
 You can run tests on a docker cluster easily.
 
-> $ run-cluster.sh hdi3.1
+> $ run-cluster.sh reefrt/hdi3.1
 
 > ...
 
