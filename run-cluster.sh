@@ -18,11 +18,13 @@
 # under the License.
 #
 
+:${REEF_HOME:?"Please specify REEF_HOME"}
+
 IMAGE=${1:-reefrt/hdi3.2}
 echo "Using $IMAGE with $REEF_HOME"
 if [[ $IMAGE == *"mesos"* ]]
 then
-   PRIVILEGED='--privileged=true'
+    PRIVILEGED='--privileged=true'
 fi
 
 LINK=""
