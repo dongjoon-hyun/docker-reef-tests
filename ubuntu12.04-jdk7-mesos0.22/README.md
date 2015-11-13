@@ -1,16 +1,16 @@
-Apache REEF (incubator) Docker Tests for Apache Mesos 0.23
+Apache REEF (incubator) Docker Tests for Apache Mesos 0.22
 ==========================================================
 
 This project aims to provide a docker image and related scripts to simulate 
 [Apache REEF (incubator)](http://reef.incubator.apache.org/) testing on 
-Apache Mesos 0.23 linux cluster as possible as it can. 
+Apache Mesos 0.22 linux cluster as possible as it can. 
 
 Components
 ----------
 
 * Ubuntu 12.04.5 LTS
 * Oracle JDK 1.7.0_80
-* Apache Mesos 0.23
+* Apache Mesos 0.22
 
 Requirements
 ------------
@@ -23,7 +23,7 @@ Run
 ---
 You can run tests on a docker cluster easily.
 
-> $ run-cluster.sh reefrt/mesos0.23
+> $ run-cluster.sh reefrt/mesos0.22
 
 > ...
 
