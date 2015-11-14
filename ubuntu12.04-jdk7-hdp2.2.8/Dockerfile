@@ -15,7 +15,7 @@
 # specific language governing permissions and limitations
 # under the License.
 
-FROM ubuntu12.04-jdk7
+FROM reefrt/ubuntu12.04-jdk7
 MAINTAINER Dongjoon Hyun <dongjoon@apache.org>
 
 # HDP 2.2.8
