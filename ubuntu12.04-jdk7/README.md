@@ -1,4 +1,4 @@
-Apache REEF (incubator) Docker Tests Base Image
+Apache REEF Docker Tests Base Image
 ===============================================
 
 Components

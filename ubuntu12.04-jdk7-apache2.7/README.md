@@ -1,8 +1,8 @@
-Apache REEF (incubator) Docker Tests for Apache Hadoop 2.7.1
+Apache REEF Docker Tests for Apache Hadoop 2.7.1
 ============================================================
 
 This project aims to provide a docker image and related scripts to simulate 
-[Apache REEF (incubator)](http://reef.incubator.apache.org/) testing on 
+[Apache REEF](http://reef.apache.org/) testing on 
 Apache Hadoop 2.7.1 linux cluster as possible as it can. 
 
 Components
@@ -19,7 +19,7 @@ But, please note that HDInsight use HDP 2.2.8.
 Requirements
 ------------
 
-Please download Apache REEF in your home, i.e. ~/incubator-reef, and build
+Please download Apache REEF in your home, i.e. ~/reef, and build
 it successfully. You can find a guide for this 
 [here](https://cwiki.apache.org/confluence/display/REEF/Compiling+REEF).
 

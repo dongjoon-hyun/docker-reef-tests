@@ -1,8 +1,8 @@
-Apache REEF (incubator) Docker Tests for HDInsight 3.2
+Apache REEF Docker Tests for HDInsight 3.2
 ======================================================
 
 This project aims to provide a docker image and related scripts to simulate 
-[Apache REEF (incubator)](http://reef.incubator.apache.org/) testing on 
+[Apache REEF](http://reef.apache.org/) testing on 
 HDInsight 3.2 linux cluster<sup>[1](#note1)</sup> as possible as it can. 
 
 Components
@@ -18,7 +18,7 @@ Documentation<sup>[2](#note2)</sup> and release notes<sup>[3](#note3)</sup>.
 Requirements
 ------------
 
-Please download Apache REEF in your home, i.e. ~/incubator-reef, and build
+Please download Apache REEF in your home, i.e. ~/reef, and build
 it successfully. You can find a guide for this 
 [here](https://cwiki.apache.org/confluence/display/REEF/Compiling+REEF).
 
