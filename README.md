@@ -17,6 +17,8 @@ Docker-based Test Cluster
 | Ubuntu 12.04 | Oracle JDK 7u80 | Apache Hadoop 2.7.2       |               | apache2.7 |
 | Ubuntu 12.04 | Oracle JDK 7u80 | Apache Mesos 0.24.1       |               | mesos0.24 |
 | Ubuntu 12.04 | Oracle JDK 7u80 | Apache Mesos 0.25.0       |               | mesos0.25 |
+| Ubuntu 12.04 | Oracle JDK 7u80 | Apache Mesos 0.26.0       |               | mesos0.26 |
+| Ubuntu 12.04 | Oracle JDK 7u80 | Apache Mesos 0.27.0       |               | mesos0.27 |
 
 Build and Run
 -------------
