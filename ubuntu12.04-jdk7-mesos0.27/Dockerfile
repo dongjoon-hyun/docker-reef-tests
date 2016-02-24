@@ -20,7 +20,7 @@ MAINTAINER Dongjoon Hyun <dongjoon@apache.org>
 
 RUN ln -s /usr/lib/jvm/java-7-oracle/jre/lib/amd64/server/libjvm.so /usr/bin/libjvm.so
 
-# Apache Mesos 0.27.0
+# Apache Mesos 0.27.1
 RUN \
   apt-key adv --keyserver keyserver.ubuntu.com --recv E56151BF && \
   echo "deb http://repos.mesosphere.io/ubuntu precise main" > /etc/apt/sources.list.d/mesosphere.list && \
