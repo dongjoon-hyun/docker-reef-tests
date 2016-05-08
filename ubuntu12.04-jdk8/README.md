@@ -5,5 +5,5 @@ Components
 ----------
 
 * Ubuntu 12.04.5 LTS
-* Oracle JDK 1.8.0_66
+* Oracle JDK 1.8.0_91
 

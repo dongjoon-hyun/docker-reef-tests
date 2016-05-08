@@ -13,7 +13,7 @@ Documentation<sup>[1](#note1)</sup> and release notes<sup>[2](#note2)</sup>.
 But, please note that HDInsight use HDP 2.2.8.
 
 * Ubuntu 12.04.5 LTS
-* Oracle JDK 1.8.0_66
+* Oracle JDK 1.8.0_91
 * Apache Hadoop 2.7.1
 
 Requirements
