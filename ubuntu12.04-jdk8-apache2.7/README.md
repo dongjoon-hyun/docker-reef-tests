@@ -1,9 +1,9 @@
-Apache REEF Docker Tests for Apache Hadoop 2.7.1
+Apache REEF Docker Tests for Apache Hadoop 2.7.2
 ============================================================
 
 This project aims to provide a docker image and related scripts to simulate 
 [Apache REEF](http://reef.apache.org/) testing on 
-Apache Hadoop 2.7.1 linux cluster as possible as it can. 
+Apache Hadoop 2.7.2 linux cluster as possible as it can. 
 
 Components
 ----------
@@ -14,7 +14,7 @@ But, please note that HDInsight use HDP 2.2.8.
 
 * Ubuntu 12.04.5 LTS
 * Oracle JDK 1.8.0_91
-* Apache Hadoop 2.7.1
+* Apache Hadoop 2.7.2
 
 Requirements
 ------------
