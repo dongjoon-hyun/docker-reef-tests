@@ -19,7 +19,7 @@
 #
 
 ORG=reefrt
-for DIR in `ls -d ubuntu12.04*`
+for DIR in `ls -d ubuntu1[26].04*`
 do
     IMAGE=$DIR
     TAG=${DIR##*-}
