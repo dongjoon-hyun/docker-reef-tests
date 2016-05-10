@@ -20,12 +20,12 @@ MAINTAINER Dongjoon Hyun <dongjoon@apache.org>
 
 RUN ln -s /usr/lib/jvm/java-7-oracle/jre/lib/amd64/server/libjvm.so /usr/bin/libjvm.so
 
-# Apache Mesos 0.24.1
+# Apache Mesos 0.24.2
 RUN \
   apt-key adv --keyserver keyserver.ubuntu.com --recv E56151BF && \
   echo "deb http://repos.mesosphere.io/ubuntu precise main" > /etc/apt/sources.list.d/mesosphere.list && \
   apt-get -y update && \
-  apt-get install -y mesos=0.24.1-0.2.35.ubuntu1204 && \
+  apt-get install -y mesos=0.24.2-2.0.17.ubuntu1204 && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
 ENV HADOOP_HOME=$HADOOP_PREFIX
