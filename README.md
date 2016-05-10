@@ -15,9 +15,9 @@ Docker-based Test Cluster
 | Ubuntu 12.04 | Oracle JDK 7u80 | HDP 2.2.8  (Hadoop 2.6.0) |               | hdp2.2    |
 | Ubuntu 12.04 | Oracle JDK 7u80 | HDP 2.3.2  (Hadoop 2.7.1) |               | hdp2.3    |
 | Ubuntu 12.04 | Oracle JDK 7u80 | Apache Hadoop 2.7.2       |               | apache2.7 |
-| Ubuntu 12.04 | Oracle JDK 7u80 | Apache Mesos 0.24.1       |               | mesos0.24 |
-| Ubuntu 12.04 | Oracle JDK 7u80 | Apache Mesos 0.25.0       |               | mesos0.25 |
-| Ubuntu 12.04 | Oracle JDK 7u80 | Apache Mesos 0.26.0       |               | mesos0.26 |
+| Ubuntu 12.04 | Oracle JDK 7u80 | Apache Mesos 0.24.2       |               | mesos0.24 |
+| Ubuntu 12.04 | Oracle JDK 7u80 | Apache Mesos 0.25.1       |               | mesos0.25 |
+| Ubuntu 12.04 | Oracle JDK 7u80 | Apache Mesos 0.26.1       |               | mesos0.26 |
 | Ubuntu 12.04 | Oracle JDK 7u80 | Apache Mesos 0.27.2       |               | mesos0.27 |
 | Ubuntu 12.04 | Oracle JDK 7u80 | Apache Mesos 0.28.1       |               | mesos0.28 |
 
