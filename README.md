@@ -26,8 +26,8 @@ Build and Run
 -------------
 
 ```sh
-build.sh
-run-cluster reefrt/hdi3.2
+./build.sh
+./run-cluster.sh reefrt/hdp2.4
 ```
 
 Reference
