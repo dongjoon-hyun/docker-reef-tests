@@ -28,4 +28,6 @@ do
     docker tag -f $ORG/$IMAGE $ORG/$TAG
 done
 docker tag -f $ORG/ubuntu12.04-jdk7-hdp2.1.15 $ORG/hdi3.1
-docker tag -f $ORG/ubuntu12.04-jdk7-hdp2.2.7 $ORG/hdi3.2
+docker tag -f $ORG/ubuntu12.04-jdk7-hdp2.2 $ORG/hdi3.2
+docker tag -f $ORG/ubuntu12.04-jdk7-hdp2.3 $ORG/hdi3.3
+docker tag -f $ORG/ubuntu12.04-jdk7-hdp2.4 $ORG/hdi3.4
