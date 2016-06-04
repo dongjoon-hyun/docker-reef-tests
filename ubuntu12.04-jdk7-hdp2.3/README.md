@@ -1,20 +1,20 @@
 Apache REEF Docker Tests for HDP 2.3
 ================================================
 
-This project aims to provide a docker image and related scripts to simulate 
-[Apache REEF](http://reef.apache.org/) testing on 
-HDP 2.3 linux cluster as possible as it can. 
+This project aims to provide a docker image and related scripts to simulate
+[Apache REEF](http://reef.apache.org/) testing on
+HDP 2.3 linux cluster as possible as it can.
 
 Components
 ----------
 
-The components of this docker images are based on HDInsight 
+The components of this docker images are based on HDInsight
 Documentation<sup>[1](#note1)</sup> and release notes<sup>[2](#note2)</sup>.
 But, please note that HDInsight use HDP 2.2.8.
 
 * Ubuntu 12.04.5 LTS
 * Oracle JDK 1.7.0_80
-* HDP 2.3.2 (Hadoop 2.7.1)
+* HDP 2.3.4 (Hadoop 2.7.1)
 
 Requirements
 ------------
