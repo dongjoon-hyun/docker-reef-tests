@@ -53,7 +53,7 @@ under the License.
 
     <property>
       <name>yarn.application.classpath</name>
-      <value>/usr/hdp/2.3.2.0-2950/hadoop/etc/hadoop, /usr/hdp/2.3.2.0-2950/hadoop/*, /usr/hdp/2.3.2.0-2950/hadoop/lib/*, /usr/hdp/2.3.2.0-2950/hadoop-hdfs/*, /usr/hdp/2.3.2.0-2950/hadoop-hdfs/lib/*, /usr/hdp/2.3.2.0-2950/hadoop-mapreduce/*, /usr/hdp/2.3.2.0-2950/hadoop-mapreduce/lib/*, /usr/hdp/2.3.2.0-2950/hadoop-yarn/*, /usr/hdp/2.3.2.0-2950/hadoop-yarn/lib/*</value>
+      <value>/usr/hdp/2.3.4.0-3485/hadoop/etc/hadoop, /usr/hdp/2.3.4.0-3485/hadoop/*, /usr/hdp/2.3.4.0-3485/hadoop/lib/*, /usr/hdp/2.3.4.0-3485/hadoop-hdfs/*, /usr/hdp/2.3.4.0-3485/hadoop-hdfs/lib/*, /usr/hdp/2.3.4.0-3485/hadoop-mapreduce/*, /usr/hdp/2.3.4.0-3485/hadoop-mapreduce/lib/*, /usr/hdp/2.3.4.0-3485/hadoop-yarn/*, /usr/hdp/2.3.4.0-3485/hadoop-yarn/lib/*</value>
     </property>
 
     <property>
