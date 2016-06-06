@@ -13,7 +13,7 @@ Documentation<sup>[1](#note1)</sup> and release notes<sup>[2](#note2)</sup>.
 
 * Ubuntu 12.04.5 LTS
 * Oracle JDK 1.7.0_80
-* HDP 2.4 (Hadoop 2.7.1)
+* HDP 2.4.2 (Hadoop 2.7.1)
 
 Requirements
 ------------
