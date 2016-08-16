@@ -1,8 +1,7 @@
 Apache REEF Docker Tests
 ====================================
 
-[Apache REEF](http://reef.apache.org/) is an approach
-to simplify and unify the lower layers of big data systems on modern resource managers.
+[Apache REEF™](http://reef.apache.org/), Retainable Evaluator Execution Framework, is a library for developing portable applications for cluster resource managers such as Apache Hadoop™ YARN or Apache Mesos™.
 This project maintains docker images to simulate the target underlying systems.
 
 Docker-based Test Cluster
