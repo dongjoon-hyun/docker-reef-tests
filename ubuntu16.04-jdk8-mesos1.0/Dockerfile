@@ -15,17 +15,17 @@
 # specific language governing permissions and limitations
 # under the License.
 
-FROM reefrt/apache2.7-jdk8
+FROM reefrt/apache2.7-dev
 MAINTAINER Dongjoon Hyun <dongjoon@apache.org>
 
 RUN ln -s /usr/lib/jvm/java-8-oracle/jre/lib/amd64/server/libjvm.so /usr/bin/libjvm.so
 
-# Apache Mesos 1.0.0
+# Apache Mesos 1.0
 RUN \
   apt-key adv --keyserver keyserver.ubuntu.com --recv E56151BF && \
-  echo "deb http://repos.mesosphere.io/ubuntu precise main" > /etc/apt/sources.list.d/mesosphere.list && \
+  echo "deb http://repos.mesosphere.io/ubuntu xenial main" > /etc/apt/sources.list.d/mesosphere.list && \
   apt-get -y update && \
-  apt-get install -y mesos=1.0.0-2.0.89.ubuntu1204 && \
+  apt-get install -y mesos=1.0.0-2.0.86.ubuntu1604 && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
 ENV HADOOP_HOME=$HADOOP_PREFIX
