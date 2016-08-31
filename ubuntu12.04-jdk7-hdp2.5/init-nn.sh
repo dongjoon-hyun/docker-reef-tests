@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
@@ -18,16 +18,21 @@
 # under the License.
 #
 
-ORG=reefrt
-for DIR in `ls -d ubuntu1[26].04*`
+/usr/sbin/sshd
+
+grep hdn /etc/hosts | awk '{print $1}' | sort | uniq > $HADOOP_PREFIX/etc/hadoop/slaves
+for host in `cat $HADOOP_PREFIX/etc/hadoop/slaves`
 do
-    IMAGE=$DIR
-    TAG=${DIR##*-}
-    echo $DIR $ORG/$TAG
-    docker build -t $ORG/$IMAGE $DIR
-    docker tag $ORG/$IMAGE $ORG/$TAG
+    scp /etc/hosts $host:/etc/hosts
+    scp $HADOOP_PREFIX/etc/hadoop/slaves $host:$HADOOP_PREFIX/etc/hadoop/slaves
 done
-docker tag $ORG/ubuntu12.04-jdk7-hdp2.1.15 $ORG/hdi3.1
-docker tag $ORG/ubuntu12.04-jdk7-hdp2.2 $ORG/hdi3.2
-docker tag $ORG/ubuntu12.04-jdk7-hdp2.3 $ORG/hdi3.3
-docker tag $ORG/ubuntu12.04-jdk7-hdp2.4 $ORG/hdi3.4
+
+hdfs namenode -format
+
+hadoop-daemon.sh --script hdfs start namenode
+slaves.sh /usr/hdp/2.5.0.0-1245/hadoop/sbin/hadoop-daemon.sh --script hdfs start datanode
+
+yarn-daemon.sh start resourcemanager
+slaves.sh /usr/hdp/2.5.0.0-1245/hadoop-yarn/sbin/yarn-daemon.sh start nodemanager
+
+cd ~ && /bin/bash

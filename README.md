@@ -13,6 +13,7 @@ Docker-based Test Cluster
 | Ubuntu 12.04 | Oracle JDK 7u80 | HDP 2.2.9  (Hadoop 2.6.0) | hdp2.2,hdi3.2 |
 | Ubuntu 12.04 | Oracle JDK 7u80 | HDP 2.3.4  (Hadoop 2.7.1) | hdp2.3        |
 | Ubuntu 12.04 | Oracle JDK 7u80 | HDP 2.4.2  (Hadoop 2.7.1) | hdp2.4        |
+| Ubuntu 12.04 | Oracle JDK 7u80 | HDP 2.5.0  (Hadoop 2.7.3) | hdp2.5        |
 | Ubuntu 12.04 | Oracle JDK 7u80 | Apache Hadoop 2.7.2       | apache2.7     |
 | Ubuntu 12.04 | Oracle JDK 7u80 | Apache Mesos 0.24.2       | mesos0.24     |
 | Ubuntu 12.04 | Oracle JDK 7u80 | Apache Mesos 0.25.1       | mesos0.25     |
@@ -26,7 +27,7 @@ Build and Run
 
 ```sh
 ./build.sh
-./run-cluster.sh reefrt/hdp2.4
+./run-cluster.sh reefrt/hdp2.5
 ```
 
 Reference
