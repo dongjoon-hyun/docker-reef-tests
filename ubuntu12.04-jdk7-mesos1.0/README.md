@@ -1,8 +1,8 @@
-Apache REEF Docker Tests for Apache Mesos 1.0.0
+Apache REEF Docker Tests for Apache Mesos 1.0
 ==========================================================
 
 This project aims to provide a docker image and related scripts to simulate
-[Apache REEF](http://reef.apache.org/) testing on Apache Mesos 1.0.0 linux
+[Apache REEF](http://reef.apache.org/) testing on Apache Mesos 1.0 linux
 cluster as possible as it can.
 
 Components
@@ -10,7 +10,7 @@ Components
 
 * Ubuntu 12.04.5 LTS
 * Oracle JDK 1.7.0_80
-* Apache Mesos 1.0.0
+* Apache Mesos 1.0
 
 Requirements
 ------------
